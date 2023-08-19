@@ -36,3 +36,9 @@ def Game():
         Game()
 
 Game()
+
+play_again = input("Rematch? (yes/no) : ").lower()
+if play_again == "yes":
+    Game()
+else:
+    exit()
