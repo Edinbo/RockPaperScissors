@@ -49,9 +49,10 @@ def RockPaperScissors():
         print("You need to input Rock, Paper or Scissors!")
         RockPaperScissors()
     play_again = input("Rematch? (yes/no) : ").lower()
-    if play_again == "yes":
-        RockPaperScissors()
-    else:
+    if play_again != "yes":
+        print("bye")
         exit()
+    else:
+        RockPaperScissors()
 
 RockPaperScissors()
