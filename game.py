@@ -3,7 +3,7 @@ import random
 variables = ["rock", "paper", "scissors"]
 player_choice = None
 
-def Game():
+def RockPaperScissors():
     player_choice = input("Which move are you going to do? : ")
     computer_choice = random.choice(variables)
     try:
@@ -44,14 +44,14 @@ def Game():
 
         else:
             print("Invalid Input : You need to input Rock, Paper or Scissors!")
-            Game()
+            RockPaperScissors()
     except Exception:
         print("You need to input Rock, Paper or Scissors!")
-        Game()
+        RockPaperScissors()
     play_again = input("Rematch? (yes/no) : ").lower()
     if play_again == "yes":
-        Game()
+        RockPaperScissors()
     else:
         exit()
 
-Game()
+RockPaperScissors()
